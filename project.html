@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Transactions</h1>
+        <div class="balance">
+            <h2>Current Balance: <span id="balanceAmount">$1000</span></h2>
+        </div>
+        <form id="transactionForm">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <select id="transactionType" name="transactionType" required>
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="transactionHistory">
+            <h2>Transaction History:</h2>
+            <ul id="historyList">
+                <!-- Transaction history will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
